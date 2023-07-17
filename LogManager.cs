@@ -6,9 +6,9 @@ namespace FoundryHost
     {
         private static EventLog eventLog = new EventLog("Application", Environment.MachineName, ".NET Runtime");
 
-        public static void Startup()
+        public static void Startup(string parameters)
         {
-            string message = $"Foundry Host Service launched node.exe";
+            string message = $"Foundry Host Service launched node.exe with the following parameters: {parameters}";
             eventLog.WriteEntry(message, EventLogEntryType.Information, 1000);
         }
 
