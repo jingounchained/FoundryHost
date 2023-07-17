@@ -2,12 +2,12 @@
 A .NET 7 Worker Service wrapper for Hosting a Foundry server.
 
 ## Windows Installation and Configuration
-You may use the FoundryHost.exe executable on the [latest release page](https://github.com/jingounchained/FoundryHost/releases/latest), or you may clone this repo and Publish the application yourself. Place the resulting FoundryHost.exe file in a path you wish to run the service from. It's recommended to place in the Foundry Virtual Tabletop folder alongside the Foundry Virtual Tabletop.exe, as it will find path to main.js from there without additional parameters.
+You may use the FoundryHost.exe executable on the [latest release page](https://github.com/jingounchained/FoundryHost/releases/latest), or you may clone this repo and Publish the application yourself. Place the resulting FoundryHost.exe file in a path you wish to run the service from. It's recommended to place in the Foundry Virtual Tabletop folder alongside the Foundry Virtual Tabletop.exe, as it will the find path to main.js from there without additional parameters.
 
 ## Configuration
 You must install NodeJS https://nodejs.org/en/download  
 Foundry Host is designed to work with the existing configuration of your Foundry installation.   
-Detials on configuring Foundry can be found here: https://foundryvtt.com/article/configuration/  
+Details on configuring Foundry can be found here: https://foundryvtt.com/article/configuration/  
 
 ### Service Account  
 Foundry Host must either be configured with the DataPath and Port provided by parameter or variable, OR configured to run on the user account which installed Foundry.  The User Account MUST have the Log On As A Service permission. https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/log-on-as-a-service  
