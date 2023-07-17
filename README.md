@@ -28,11 +28,13 @@ Environmental Variables:
 	FOUDNRY_VTT_PORT: numeric port such as 30000
 
 ### Install the Service
-I recommend using PowerShell to install. You'll need to run as Administrator in order to register the Service with Windows.
-Execute the command `sc.exe create C binpath="<path/to/FoundryHost.exe"`
-Optionally I would add a brief description such as `sc.exe description FoundryHost "Host Service for Foundry VTT"`
-To set the account, execute `sc.exe config FoundryHost obj=".\localUsername" password="passwordForUser"` (alternatively, this can be set in the Log On tab of the Service Properties - doing it this will way cause Windows to automatically provide the Log On As Service permission to the target account, as well)
+I recommend using PowerShell to install. You'll need to run as Administrator in order to register the Service with Windows.  
+Execute the command `sc.exe create C binpath="<path/to/FoundryHost.exe" obj=".\localUsername" password="passwordForUser"`  
+Optionally I would add a brief description such as `sc.exe description FoundryHost "Host Service for Foundry VTT"`  
+![image](https://github.com/jingounchained/FoundryHost/assets/32217493/1e95bfdd-dbf1-4ce3-aedb-0b0541e9173c)
 
+Set your Environmental Variable for FOUNDRY
+![image](https://github.com/jingounchained/FoundryHost/assets/32217493/5e7d0a20-afb5-4bf0-83df-6ec783d438b2)
 
 If no issues were encountered you should now see the Service in your Services List and should be able to start it.
 
