@@ -40,7 +40,7 @@ Now you should see FoundryHost in your Services List.
 ![image](https://github.com/jingounchained/FoundryHost/assets/32217493/d7cf39b4-5843-46c6-8dea-95770b9a9877)
 
 
-If no issues were encountered you should now see the Service in your Services List and should be able to start it.   Go to localhost:30000 to confirm.
+If no issues were encountered you should now see the Service in your Services List and should be able to start it. Navigate to localhost:port to confirm.
 ![image](https://github.com/jingounchained/FoundryHost/assets/32217493/5d27e73f-aba8-4e80-bb13-82386d1cbdda)
 
 
