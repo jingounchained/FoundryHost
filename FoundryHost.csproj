@@ -5,6 +5,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-FoundryHost-3088e4d4-145b-4123-9385-6e5de07f12f2</UserSecretsId>
+    <Authors>$(AssemblyName)</Authors>
+    <Description>Windows Host Service for Foundry VTT</Description>
+    <Copyright>Copyright Licensed under GPL3</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

@@ -8,8 +8,25 @@ namespace FoundryHost
 {
     public class Config
     {
+        
         public string DataPath { get; set; } = Environment.GetEnvironmentVariable("FOUNDRY_VTT_DATA_PATH", EnvironmentVariableTarget.Machine);
-        public string Foundry { get; set; } = Environment.GetEnvironmentVariable("FOUNDRY", EnvironmentVariableTarget.Machine);
+        private string _mainjs = string.Empty;
+        public string Foundry
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_mainjs))
+                {
+                    _mainjs = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"resources\app\main.js");
+                    if (!File.Exists(_mainjs)) _mainjs = Environment.GetEnvironmentVariable("FOUNDRY", EnvironmentVariableTarget.Machine);
+                }
+                return _mainjs;
+            }
+            set
+            {
+                _mainjs = value;
+            }
+        }
         private int _port;
         public int Port { 
             get

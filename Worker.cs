@@ -35,7 +35,8 @@ namespace FoundryHost
                 node.StartInfo.FileName = "node.exe";
                 node.StartInfo.Arguments = $"\"{Config.Instance.Foundry}\" --dataPath=\"{Config.Instance.DataPath}\" --port=\"{Config.Instance.Port}\"";
                 node.StartInfo.UseShellExecute = false;
-
+                node.StartInfo.RedirectStandardOutput = true;
+                node.StartInfo.RedirectStandardInput = true;
                 started = node.Start();
                 if (started) LogManager.Startup();
                 await node.WaitForExitAsync(stoppingToken);
