@@ -23,7 +23,6 @@ namespace FoundryHost
         {
             try
             {
-                
                 if (stoppingToken.IsCancellationRequested)
                 {
                     if (IsRunning) node.Kill();
@@ -35,10 +34,8 @@ namespace FoundryHost
                 node.StartInfo.FileName = "node.exe";
                 node.StartInfo.Arguments = $"\"{Config.Instance.Foundry}\" --dataPath=\"{Config.Instance.DataPath}\" --port=\"{Config.Instance.Port}\"";
                 node.StartInfo.UseShellExecute = false;
-                node.StartInfo.RedirectStandardOutput = true;
-                node.StartInfo.RedirectStandardInput = true;
                 started = node.Start();
-                if (started) LogManager.Startup();
+                if (started) LogManager.Startup(node.StartInfo.Arguments);
                 await node.WaitForExitAsync(stoppingToken);
             }
             catch (TaskCanceledException)
