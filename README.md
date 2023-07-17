@@ -2,11 +2,11 @@
 A .NET 7 Worker Service wrapper for Hosting a Foundry server.
 
 ## Windows Installation and Configuration
-You may use the FoundryHost.zip archive on the [latest release page](https://github.com/jingounchained/FoundryHost/releases/latest) to acquire the self-contained single-file executable and the accompanying config.json file, or you may clone this repo and Publish the application yourself. Unzip or publish the application and make note of the filepath. 
+You may use the FoundryHost.exe executable on the [latest release page](https://github.com/jingounchained/FoundryHost/releases/latest), or you may clone this repo and Publish the application yourself. Place the resulting FoundryHost.exe file in a path you wish to run the service from. 
 
 ## Configuration
-You must install NodeJS https://nodejs.org/en/download
-Foundry Host is designed to work with the existing configuration of your Foundry installation.
+You must install NodeJS https://nodejs.org/en/download  
+Foundry Host is designed to work with the existing configuration of your Foundry installation.  
 Detials on configuring Foundry can be found here: https://foundryvtt.com/article/configuration/
 
 ### Service Account
