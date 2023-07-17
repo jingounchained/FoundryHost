@@ -19,7 +19,7 @@ Below is a list of valid parameters and variables
 Command Line Parameters:   
 	--foundry="path\to\main.js"  
 	--datapath="user\data\path"  
-	--port="<port integer>"  
+	--port="30000" (or whatever integer)
 
 Environmental Variables:  
 	FOUNDRY : path\to\main.js  
