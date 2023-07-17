@@ -17,8 +17,9 @@ namespace FoundryHost
             {
                 if (string.IsNullOrEmpty(_mainjs))
                 {
-                    _mainjs = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"resources\app\main.js");
-                    if (!File.Exists(_mainjs)) _mainjs = Environment.GetEnvironmentVariable("FOUNDRY", EnvironmentVariableTarget.Machine);
+                    _mainjs = Environment.GetEnvironmentVariable("FOUNDRY", EnvironmentVariableTarget.Machine); 
+                    if(string.IsNullOrEmpty(_mainjs)) _mainjs = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"resources\app\main.js");
+                    if (string.IsNullOrEmpty(_mainjs)) throw new Exception($"Path to main.js was not provided and could not be found at {_mainjs}.");
                 }
                 return _mainjs;
             }
