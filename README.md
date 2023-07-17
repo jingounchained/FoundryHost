@@ -33,7 +33,7 @@ Execute the command `sc.exe create C binpath="<path/to/FoundryHost.exe" obj=".\l
 Optionally I would add a brief description such as `sc.exe description FoundryHost "Host Service for Foundry VTT"`  
 ![image](https://github.com/jingounchained/FoundryHost/assets/32217493/1e95bfdd-dbf1-4ce3-aedb-0b0541e9173c)
 
-Set your Environmental Variable for FOUNDRY
+Set your Environmental Variable for FOUNDRY  
 ![image](https://github.com/jingounchained/FoundryHost/assets/32217493/5e7d0a20-afb5-4bf0-83df-6ec783d438b2)
 
 If no issues were encountered you should now see the Service in your Services List and should be able to start it.
