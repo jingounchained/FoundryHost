@@ -33,7 +33,7 @@ Optionally I would add a brief description such as `sc.exe description FoundryHo
 ![image](https://github.com/jingounchained/FoundryHost/assets/32217493/87d1f4cc-34e6-4c36-b93d-25e2403c2df4)
 
 
-Set your Environmental Variable for FOUNDRY  
+Set any Environmental Variables, such as FOUNDRY if you're not running from the Foundry root.  
 ![image](https://github.com/jingounchained/FoundryHost/assets/32217493/5e7d0a20-afb5-4bf0-83df-6ec783d438b2)
 
 Now you should see FoundryHost in your Services List.   
