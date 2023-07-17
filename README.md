@@ -2,7 +2,7 @@
 A .NET 7 Worker Service wrapper for Hosting a Foundry server.
 
 ## Windows Installation and Configuration
-You may use the FoundryHost.exe executable on the [latest release page](https://github.com/jingounchained/FoundryHost/releases/latest), or you may clone this repo and Publish the application yourself. Place the resulting FoundryHost.exe file in a path you wish to run the service from. 
+You may use the FoundryHost.exe executable on the [latest release page](https://github.com/jingounchained/FoundryHost/releases/latest), or you may clone this repo and Publish the application yourself. Place the resulting FoundryHost.exe file in a path you wish to run the service from. It's recommended to place in the Foundry Virtual Tabletop folder alongside the Foundry Virtual Tabletop.exe, as it will find path to main.js from there without additional parameters.
 
 ## Configuration
 You must install NodeJS https://nodejs.org/en/download  
@@ -13,8 +13,7 @@ Detials on configuring Foundry can be found here: https://foundryvtt.com/article
 Foundry Host must either be configured with the DataPath and Port provided by parameter or variable, OR configured to run on the user account which installed Foundry.  The User Account MUST have the Log On As A Service permission. https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/log-on-as-a-service  
 
 ### Parameters or Environmental Variables     
-Foundry Host requires at the very least 1 Environmental Variable or Command Line Parameter: FOUNDRY.  
-You can mix and match these as you see fit. Following the same logic as Foundry, Parameters will be given priority over Environmental Variables, and those will be given priority over the options.json file.  
+You can mix and match these as you see fit. Following the same logic as Foundry, Parameters will be given priority over Environmental Variables, and those will be given priority over the options.json file.  The FOUDNRY parameter and variable is necessary to point to main.js if you are not running from the same root as Foundry VTT or have relocated the resources/app directories.
   
 Below is a list of valid parameters and variables  
 Command Line Parameters:   
