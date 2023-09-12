@@ -13,7 +13,7 @@ Details on configuring Foundry can be found here: https://foundryvtt.com/article
 Foundry Host must either be configured with the DataPath and Port provided by parameter or variable, OR configured to run on the user account which installed Foundry.  The User Account MUST have the Log On As A Service permission. https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/log-on-as-a-service  
 
 ### Parameters or Environmental Variables     
-You can mix and match these as you see fit. Following the same logic as Foundry, Parameters will be given priority over Environmental Variables, and those will be given priority over the options.json file.  The FOUDNRY parameter and variable is necessary to point to main.js if you are not running from the same root as Foundry VTT or have relocated the resources/app directories.
+You can mix and match these as you see fit. Following the same logic as Foundry, Parameters will be given priority over Environmental Variables, and those will be given priority over the options.json file.  The FOUNDRY parameter and variable is necessary to point to main.js if you are not running from the same root as Foundry VTT or have relocated the resources/app directories.
   
 Below is a list of valid parameters and variables  
 Command Line Parameters:   
